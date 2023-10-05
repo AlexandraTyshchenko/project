@@ -1,0 +1,20 @@
+.error {
+    color: #C40202;
+    font-size: smaller;
+    padding-left: 10px;
+}
+
+.input-error {
+    border-color: #C40202;
+}
+
+button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#deck-icon > img{
+    margin: auto;
+    width: 100%;
+    max-width: 256px;
+}

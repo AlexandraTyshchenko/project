@@ -1,0 +1,64 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;/*header height*/
+  margin-left: 100px;
+  margin-right: 40px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 0;
+  
+  padding: 8px;
+}
+header{
+  height: 6.5vh;
+}
+
+#sidebar{
+  max-width: fit-content;
+}
+
+@media only screen and (max-width: 372px) {
+  #sidebar{
+    margin-top: 110px;
+  }
+  #sidebar-column{
+    min-height: calc(100vh - 110px) ;
+  }
+  .App{
+    margin-top: 110px;/*header height*/
+  }
+}
+@media only screen and (min-width: 373px) {
+  #sidebar{
+    margin-top: 65px;
+  }
+  #sidebar-column{
+    min-height: calc(100vh - 65px) ;
+  }
+  .App{
+    margin-top: 65px;/*header height*/
+  }
+}
+

@@ -1,0 +1,36 @@
+.request{
+    color:#7096B9;
+    border: #7BA9D7 solid;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+.request:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+.tick {
+    color: white; 
+    background-color: green; 
+    padding: 5px ; 
+    font-size: 1.2em;
+    margin-right: 8px;
+    
+}
+
+.cross {
+    color: white;
+    background-color: red;
+    padding: 5px ; 
+    font-size: 1.2em; 
+   
+}
+
+.button:hover{
+    transform: scale(1.05); 
+}
+.button{
+    transition: transform 0.2s;
+}
+.cont{
+    margin: 4px;
+}

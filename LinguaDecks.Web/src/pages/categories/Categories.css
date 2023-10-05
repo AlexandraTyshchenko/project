@@ -1,0 +1,11 @@
+.bin{
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 0px;
+    transition: transform 0.2s;
+}
+
+.bin:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+}

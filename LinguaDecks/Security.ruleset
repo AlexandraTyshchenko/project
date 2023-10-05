@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Security Code Scan Rule set" Description="Rule set for customizing Security Code Scan rule severity" ToolsVersion="16.0">
+  <Rules AnalyzerId="SecurityCodeScan" RuleNamespace="SecurityCodeScan">
+    <!-- DISABLE ONLY FOR NON-PUBLIC API -->
+    <Rule Id="SCS0016" Action="Info" />          <!-- Controller method is vulnerable to CSRF -->
+  </Rules>
+</RuleSet>

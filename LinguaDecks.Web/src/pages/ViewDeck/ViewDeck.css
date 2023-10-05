@@ -1,0 +1,32 @@
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+#content{
+    min-height: calc(100vh - 6.5vh);
+}
+
+i{
+    max-width: 64px;
+    max-height: 64px;
+}
+
+#displayCards{
+    max-height: 65vh;
+}
+
+#cartsList{    
+    max-height: 60vh;
+    margin-bottom: 10px;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+}
+#deck-icon > img{
+    margin: auto;
+  width: 100%;
+  max-width: 256px;
+}
+
+@media only screen and (max-height: 850px) {
+    #cartsList{        
+    max-height: 45vh;
+    }
+  }

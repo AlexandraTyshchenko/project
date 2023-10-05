@@ -1,0 +1,13 @@
+#signInCreateAcc {
+    font-size: small;
+}
+
+.error {
+    color: #C40202;
+    font-size: smaller;
+    padding-left: 10px;
+}
+
+.input-error {
+    border-color: #C40202;
+}

@@ -1,0 +1,16 @@
+.deckitem{
+    border: 2px solid #7096B9;
+    color:#7096B9;
+    padding: 20px;
+    margin:10px;
+}
+.star-icon {
+    color: #f7d83d; 
+    margin-left: 5px; 
+  }
+  .deckitem:hover {
+    background-color: #43729D;
+    color: aliceblue;
+    cursor: pointer;
+  }
+ 

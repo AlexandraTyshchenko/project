@@ -1,0 +1,22 @@
+#open-sidebar{
+    margin-left: 14px;
+}
+
+#login-btn{
+    --bs-btn-padding-y: .5rem;
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-font-size: 1.2rem;
+}
+
+#login-btn, #profile-avatar{
+    margin-right: 16px;
+}
+
+#user-profile-dropdown{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+#header{
+    margin-left: 20px;
+    margin-right: 20px;
+}

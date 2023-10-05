@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="JPI Cloud Rule set" ToolsVersion="16.0">
+  <Include Path="Security.ruleset" Action="Default" />
+  <Include Path="StyleCop.ruleset" Action="Default" />
+  <Include Path="Roslyn.ruleset" Action="Default" />
+</RuleSet>
