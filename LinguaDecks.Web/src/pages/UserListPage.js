@@ -19,7 +19,7 @@ function ViewUsers() {
   const [role, setRole] = useState("");
   const [error, setError] = useState(null);
 
-  const token = getAuth().accessToken;
+  const token = getAuth()?.accessToken;
   axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
   useEffect(() => {

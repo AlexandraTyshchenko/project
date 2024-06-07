@@ -13,7 +13,7 @@ function Pagination({ paginate, totalPages, currentPage }) {
   useEffect(() => {
     setClickedPage(currentPage)
 
-  }, [currentPage]); //для того якщо фільтрація була проведена на іншій сторінці щоб перенапрвляло на 1 сторінку
+  }, [currentPage]); 
 
   function MoveBack() {
     const updatedPages = pages.map((page) => page - 1);

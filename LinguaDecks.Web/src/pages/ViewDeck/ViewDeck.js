@@ -267,9 +267,9 @@ function DeckPage(props) {
             </div>
             <div className="col-auto fs-5 me-auto">{comment.user.name}</div>
             <div className="col-auto">{comment.date}</div>
-            {((user?.role.toLowerCase() === "teacher" && deck.author.id === user.id) || comment.user.id === user.id) ||
-              (user?.role.toLowerCase() === "student" && comment.user.id === user.id) ||
-              (user?.role.toLowerCase() === "admin" || comment.user.id === user.id) ? (
+            {((user?.role.toLowerCase() === "teacher" && deck.author?.id === user.id) || comment.user.id === user.id) ||
+              (user?.role.toLowerCase() === "student" && comment.user?.id === user.id) ||
+              (user?.role.toLowerCase() === "admin" || comment.user?.id === user.id) ? (
               <div className="col-auto btn btn-danger" onClick={() => DeleteComment(comment.id)}>🗑</div>
             ) : null}
           </div>
@@ -298,7 +298,9 @@ function DeckPage(props) {
         <div id="displayCards" className="col-md-6 mt-3">{cardsView(deck.cards)}</div> 
         {deckInfoView()}
         <div className="w-100 d-none d-md-block" /> 
-        <div id="comments" className="col mt-3 border">{commentsView()}</div> 
+        <div className="col mt-3 border">
+          {user && user.id ? commentsView() : null}
+        </div>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ function DeckPage() {
   const [deckRating, setDeckRating] = useState(null);
   const [comments, setComments] = useState(null);
   const [update,Update]=useState(true);
-  const token = getAuth().accessToken;
+  const token = getAuth()?.accessToken;
   axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   
 	useEffect(() => {
